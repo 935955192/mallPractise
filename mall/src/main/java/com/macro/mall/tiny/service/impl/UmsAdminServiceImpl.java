@@ -41,7 +41,7 @@ public class UmsAdminServiceImpl implements UmsAdminService {
     private PasswordEncoder passwordEncoder;
     @Value("${jwt.tokenHead}")
     private String tokenHead;
-    @Autowired(required = false)
+    @Autowired
     private UmsAdminMapper adminMapper;
     @Autowired
     private UmsAdminRoleRelationDao adminRoleRelationDao;
